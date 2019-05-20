@@ -36,7 +36,7 @@ add_action('delete_post', 'mon_plugin_post_delete_mail');
         //$title = str_replace( 'et', '&amp;', $title );
 //Retourne le titre modifié
         //return $title;
-    }
+    //}
 //Ajout d'un filtre sur 'the_title' qui appellera mon_plugin_the_title()
     //add_filter( 'the_title', 'mon_plugin_the_title' );
 
