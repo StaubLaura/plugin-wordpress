@@ -13,7 +13,7 @@
 //fonction qui affiche la balise meta
 //function mon_plugin_meta_keywords() {
    // echo '<meta name="keywords" content="HTML, CSS, XML, JavaScript">';
-}
+//}
 
 //Fonction qui envoie par email les infos d'un email supprimé
 function mon_plugin_post_delete_mail($post_id) {
@@ -27,7 +27,7 @@ function mon_plugin_post_delete_mail($post_id) {
     wp_mail(get_bloginfo('admin_email'), $sujet, $message);
 }
 //Ajout d'une action sur 'delete_post' qui appellera mon_plugin_post_delete_mail()
-//add_action('delete_post', 'mon_plugin_post_delete_mail');
+add_action('delete_post', 'mon_plugin_post_delete_mail');
 
 
 //fonction qui remplace la chaine 'et' par '&amp;'
