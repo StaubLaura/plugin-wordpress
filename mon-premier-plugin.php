@@ -51,10 +51,8 @@ add_shortcode( 'yoda', 'mon_plugin_yoda_shortcode' );
 
 
 /**
- * Shortcode qui retourne le célèbre "Luke, Je sui ton père !" dans un
-élément blockquote.
+ * Shortcode qui retourne le célèbre "Luke, Je sui ton père !" dans un élément blockquote.
  * Le contenu du shortcode sera utilisé pour remplacer 'Luke'
- *
  * Exemples :
  * [vador] => <blockquote>Luke, Je sui ton père !</blockquote>
  * [vador]Serge[/vador] => <blockquote>Serge, Je sui ton père
