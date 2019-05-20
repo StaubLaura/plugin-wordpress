@@ -11,9 +11,9 @@
 //ajouter code
 
 //fonction qui affiche la balise meta
-//function mon_plugin_meta_keywords() {
-   // echo '<meta name="keywords" content="HTML, CSS, XML, JavaScript">';
-//}
+function mon_plugin_meta_keywords() {
+    echo '<meta name="keywords" content="HTML, CSS, XML, JavaScript">';
+}
 
 //Fonction qui envoie par email les infos d'un email supprimé
 function mon_plugin_post_delete_mail($post_id) {
@@ -31,12 +31,12 @@ add_action('delete_post', 'mon_plugin_post_delete_mail');
 
 
 //fonction qui remplace la chaine 'et' par '&amp;'
-//function mon_plugin_the_title($title){
+function mon_plugin_the_title($title){
 //Remplace 'et' dans le titre
-        //$title = str_replace( 'et', '&amp;', $title );
+        $title = str_replace( 'et', '&amp;', $title );
 //Retourne le titre modifié
-        //return $title;
-    //}
+        return $title;
+    }
 //Ajout d'un filtre sur 'the_title' qui appellera mon_plugin_the_title()
-    //add_filter( 'the_title', 'mon_plugin_the_title' );
+    add_filter( 'the_title', 'mon_plugin_the_title' );
 
