@@ -15,6 +15,22 @@ function mon_plugin_meta_keywords() {
     echo '<meta name="keywords" content="HTML, CSS, XML, JavaScript">';
 }
 
+//fonction qui envoie par email les infos d'un email supprimé
+function mon_plugin_post_delete_mail($post_id) {
+    //récupération informations de l'article supprimé
+    $post = get_post($post_id);
+    //création sujet de l'email
+    $sujet = "Article supprimé : " .$post->post_title;
+    //création contenu de l'email
+    $message = "Contenu de l'article :" .$post->post_content;
+    //envoie email administrateur du site
+    wp_mail(get_bloginfo('admin_email'), $sujet, $message);
+}
+//ajout action sur 'delete_post' qui appellera mon_plugin_post_delete_mail()
+add_action('delete_post', 'mon_plugin_post_delete_mail');
+
+
+
 //commit and push
 
 //updload
