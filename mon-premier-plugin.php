@@ -30,7 +30,9 @@ function mon_plugin_post_delete_mail($post_id) {
 add_action('delete_post', 'mon_plugin_post_delete_mail');
 
 
+//fonction qui remplace la chaine 'et' par '&amp;'
+function mon_plugin_the_title($title){
 
-//commit and push
+}
 
 //updload
