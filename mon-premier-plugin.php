@@ -40,3 +40,11 @@ function mon_plugin_the_title($title){
 //Ajout d'un filtre sur 'the_title' qui appellera mon_plugin_the_title()
     add_filter( 'the_title', 'mon_plugin_the_title' );
 
+
+//Fonction qui retourne la célèbre citation de maître Yoda
+function mon_plugin_yoda_shortcode() {
+    return "<blockquote>Que la force soit avec toi jeune padawan
+!</blockquote>";
+}
+//Enregistre le shortcode yoda
+add_shortcode( 'yoda', 'mon_plugin_yoda_shortcode' );
