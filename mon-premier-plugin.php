@@ -39,6 +39,6 @@ function mon_plugin_the_title($title){
     }
 //Ajout d'un filtre sur 'the_title' qui appellera mon_plugin_the_title()
     add_filter( 'the_title', 'mon_plugin_the_title' );
-}
+
 
 //updload

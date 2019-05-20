@@ -5,7 +5,7 @@
       <paths name="Infomaniak ESIG">
         <serverdata>
           <mappings>
-            <mapping deploy="/voyages/wp-content/plugins/mon-premier-plugin" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/voyages/wp-content/plugins/mon-premier-plugin" local="$PROJECT_DIR$" web="/lst" />
           </mappings>
         </serverdata>
       </paths>
